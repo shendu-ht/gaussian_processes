@@ -6,4 +6,6 @@ collection of those random variables has a multivariate normal distribution.
 
 ### 1. Definition
 
-A time continuous stochastic process $${X_t; t∈T}$$
+A time continuous stochastic process 
+
+
