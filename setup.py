@@ -19,7 +19,7 @@ from setuptools import setup, find_packages
 
 def read(file_name):
     absolute_path = os.path.abspath(os.path.dirname(__file__))
-    return open(os.path.join(absolute_path, file_name))
+    return open(os.path.join(absolute_path, file_name)).read()
 
 
 setup(
