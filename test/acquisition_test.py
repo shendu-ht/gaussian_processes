@@ -34,6 +34,7 @@ class TestAcquisition(unittest.TestCase):
 
         modes = ['ExpectedImprovement', 'ProbabilityImprovement', 'UCB', 'Entropy', 'tExpectedImprovement']
 
+        print("\n\n---------------ModeTestStart---------------")
         for mode in modes:
             acq = Acquisition(mode=mode)
             print(mode, acq.eval(tau, mean, std))
@@ -48,6 +49,7 @@ class TestAcquisition(unittest.TestCase):
         modes_mcmc = ['IntegratedExpectedImprovement', 'IntegratedProbabilityImprovement',
                       'IntegratedUCB', 'tIntegratedExpectedImprovement']
 
+        print("\n\n---------------McmcModeTestStart---------------")
         for mode in modes_mcmc:
             acq = Acquisition(mode=mode)
             print(mode, acq.eval(tau, means, stds))

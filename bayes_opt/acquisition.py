@@ -244,28 +244,3 @@ class Acquisition:
                 Acquisition function value.
         """
         return self.function(tau, mean, std, **self.params)
-
-
-def test():
-    tau = 1.96
-    mean = 0
-    std = 1
-
-    extra_params = {'beta': 1.5}
-
-    means = numpy.random.randn(1000)
-    stds = numpy.random.uniform(0.8, 1.2, 1000)
-
-    modes = ['ExpectedImprovement', 'ProbabilityImprovement', 'UCB', 'Entropy',
-             'tExpectedImprovement']
-
-    modes_mcmc = ['IntegratedExpectedImprovement', 'IntegratedProbabilityImprovement',
-                  'IntegratedUCB', 'tIntegratedExpectedImprovement']
-
-    for mode in modes:
-        acq = Acquisition(mode=mode)
-        print(mode, acq.eval(tau, mean, std))
-
-    for mode in modes_mcmc:
-        acq = Acquisition(mode=mode)
-        print(mode, acq.eval(tau, means, stds))
