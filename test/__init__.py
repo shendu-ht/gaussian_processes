@@ -4,17 +4,11 @@
     Shendu HT
     Copyright (c) 2020-now All Rights Reserved.
     ----------------------------------------------------
-    File Name : bayesian_optimization.py
+    File Name : __init__.py
     Author : shendu.ht
     Email : shendu.ht@outlook.com
-    Create Time : 11:06 下午
+    Create Time : 12:09 下午
     Description : description what the main function of this file
     Change Activity :
-            version0 : 11:06 下午 by shendu.ht  init
+            version0 : 12:09 下午 by shendu.ht  init
 """
-import numpy
-from scipy.optimize import minimize
-from scipy.stats import norm
-
-
-
