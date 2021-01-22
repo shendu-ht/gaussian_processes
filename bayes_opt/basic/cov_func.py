@@ -385,6 +385,10 @@ class ExpSine(Kernel):
 
 
 class DotProd(Kernel):
+    """
+    Dot-product kernel class.
+    """
+
     def __init__(self, sigma_f=1.0, sigma_n=1e-6, bounds=None, parameters=None):
         if parameters is None:
             parameters = ['sigma_f', 'sigma_n']
