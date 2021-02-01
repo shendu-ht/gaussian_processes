@@ -9,3 +9,5 @@ collection of those random variables has a multivariate normal distribution.
 A time continuous stochastic process 
 
 
+
+$$P(y(x)|X_N, Y_N)={P(Y_N|y(x),X_N)P(y(x))}/{P(Y_N|X_N)} $$
